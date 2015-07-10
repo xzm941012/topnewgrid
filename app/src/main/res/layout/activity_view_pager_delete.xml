@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<com.example.topnewgrid.choosephotos.choosephotos.photoviewer.photoviewlibs.HackyViewPager
+    android:id="@+id/view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="48dip"/>
+
+    <RelativeLayout
+        android:id="@+id/header"     
+        android:orientation="horizontal"   
+        android:background="#77555555"
+        android:layout_height="60dip"
+        android:layout_width="fill_parent">
+          <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_icon"
+            android:onClick="back"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />     
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          	android:layout_alignParentRight="true"
+          	android:layout_centerVertical="true"
+          	android:layout_marginRight="15dp"
+            android:background="@drawable/delete"/>
+    </RelativeLayout>
+    
+    </FrameLayout>

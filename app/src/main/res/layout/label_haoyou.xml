@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingBottom="10dp"
+    android:background="#ffffffff"
+    android:id="@+id/haoyou">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/avatar_default" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView109"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffe87a83"
+        android:layout_alignTop="@+id/profile_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView107"
+        android:layout_alignTop="@+id/profile_image"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_toEndOf="@+id/profile_image"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/imageView119"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView107"
+        android:layout_alignStart="@+id/textView107"
+        android:layout_alignBottom="@+id/profile_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="他还没有编写简介"
+        android:id="@+id/textView126"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageView119"
+        android:layout_toEndOf="@+id/imageView119"
+        android:singleLine="true"
+        android:textColor="#ff707070" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0.01dp"
+        android:id="@+id/imageView158"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ffa5a5a5" />
+
+</RelativeLayout>

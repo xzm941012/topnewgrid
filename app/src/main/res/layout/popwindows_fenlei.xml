@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/subscribe_bg"
+    android:paddingBottom="200dp"
+    android:id="@+id/poplinearLayout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="14.0dip"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            style="@style/subscribe_my_tip_text"
+            android:id="@+id/textView28"
+            android:text="选择分类"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.0dip"
+            android:text="单击选择分类"
+            android:textColor="@color/subscribe_tip_text"
+            android:textSize="11.0sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/seperate_line"
+        style="@style/subscribe_seperate_line"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seperate_line"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/linearLayout3">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="38.0dip"
+                android:minWidth="72.0dip" >
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/subscribe_item_bg"
+                    android:gravity="center"
+                    android:minHeight="38.0dip"
+                    android:minWidth="72.0dip"
+                    android:textColor="@color/subscribe_item_text_color"
+                    android:textSize="14.0sp"
+                    android:text="IT" />
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="38.0dip"
+                android:minWidth="72.0dip" >
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/subscribe_item_bg"
+                    android:gravity="center"
+                    android:minHeight="38.0dip"
+                    android:minWidth="72.0dip"
+                    android:textColor="@color/subscribe_item_text_color"
+                    android:textSize="14.0sp"
+                    android:text="美食" />
+
+                <ImageView
+                    android:id="@+id/imageView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="38.0dip"
+                android:minWidth="72.0dip" >
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/subscribe_item_bg"
+                    android:gravity="center"
+                    android:minHeight="38.0dip"
+                    android:minWidth="72.0dip"
+                    android:textColor="@color/subscribe_item_text_color"
+                    android:textSize="14.0sp"
+                    android:text="手工" />
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="38.0dip"
+                android:minWidth="72.0dip" >
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/subscribe_item_bg"
+                    android:gravity="center"
+                    android:minHeight="38.0dip"
+                    android:minWidth="72.0dip"
+                    android:textColor="@color/subscribe_item_text_color"
+                    android:textSize="14.0sp"
+                    android:text="运动" />
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linglayout4">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="38.0dip"
+                android:minWidth="72.0dip" >
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/subscribe_item_bg"
+                    android:gravity="center"
+                    android:minHeight="38.0dip"
+                    android:minWidth="72.0dip"
+                    android:textColor="@color/subscribe_item_text_color"
+                    android:textSize="14.0sp"
+                    android:text="艺术" />
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="38.0dip"
+                android:minWidth="72.0dip" >
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/subscribe_item_bg"
+                    android:gravity="center"
+                    android:minHeight="38.0dip"
+                    android:minWidth="72.0dip"
+                    android:textColor="@color/subscribe_item_text_color"
+                    android:textSize="14.0sp"
+                    android:text="舞蹈" />
+
+                <ImageView
+                    android:id="@+id/imageView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="38.0dip"
+                android:minWidth="72.0dip" >
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/subscribe_item_bg"
+                    android:gravity="center"
+                    android:minHeight="38.0dip"
+                    android:minWidth="72.0dip"
+                    android:textColor="@color/subscribe_item_text_color"
+                    android:textSize="14.0sp"
+                    android:text="音乐" />
+
+                <ImageView
+                    android:id="@+id/imageView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="38.0dip"
+                android:minWidth="72.0dip" >
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/subscribe_item_bg"
+                    android:gravity="center"
+                    android:minHeight="38.0dip"
+                    android:minWidth="72.0dip"
+                    android:textColor="@color/subscribe_item_text_color"
+                    android:textSize="14.0sp"
+                    android:text="生活" />
+
+                <ImageView
+                    android:id="@+id/imageView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/linglayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="38.0dip"
+                android:minWidth="72.0dip" >
+
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/subscribe_item_bg"
+                    android:gravity="center"
+                    android:minHeight="38.0dip"
+                    android:minWidth="72.0dip"
+                    android:textColor="@color/subscribe_item_text_color"
+                    android:textSize="14.0sp"
+                    android:text="学习" />
+
+                <ImageView
+                    android:id="@+id/imageView72"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="38.0dip"
+                android:minWidth="72.0dip" >
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/subscribe_item_bg"
+                    android:gravity="center"
+                    android:minHeight="38.0dip"
+                    android:minWidth="72.0dip"
+                    android:textColor="@color/subscribe_item_text_color"
+                    android:textSize="14.0sp"
+                    android:text="其他" />
+
+                <ImageView
+                    android:id="@+id/imageView75"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="38.0dip"
+                android:minWidth="72.0dip" >
+
+                <ImageView
+                    android:id="@+id/imageView76"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="38.0dip"
+                android:minWidth="72.0dip" >
+
+                <ImageView
+                    android:id="@+id/imageView79"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textColor="@color/subscribe_tip_text"
+        android:textSize="11.0sp"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp" />
+</RelativeLayout>

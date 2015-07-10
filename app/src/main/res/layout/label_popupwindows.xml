@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background_selector">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:background="@drawable/selector_item"
+        android:id="@+id/relativeLayout42"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="兴趣管理"
+            android:id="@+id/textView70"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff393939" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="0.01dp"
+        android:id="@+id/imageView135"
+        android:background="#ffc2c2c2" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="@drawable/selector_item"
+        android:id="@+id/relativeLayout43" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="附近"
+            android:id="@+id/textView142"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff393939" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="0.01dp"
+        android:id="@+id/imageView224"
+        android:background="#ffc2c2c2" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="@drawable/selector_item"
+        android:id="@+id/relativeLayout64"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="摇一摇"
+            android:id="@+id/textView233"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff393939" />
+    </RelativeLayout>
+</LinearLayout>

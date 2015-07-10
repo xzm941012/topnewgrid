@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/avatar_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/name"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginTop="0dp"
+            android:textColor="#ffe87a83"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="该用户未定位"
+            android:id="@+id/time2"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name"
+            android:layout_marginBottom="3dp"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/juli"
+            android:layout_alignTop="@+id/name"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView6"
+            android:textColor="#ff44b59d"
+            android:layout_alignTop="@+id/juli"
+            android:layout_toLeftOf="@+id/juli"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:id="@+id/imageView99"
+            android:layout_alignTop="@+id/name"
+            android:layout_toRightOf="@+id/name"
+            android:layout_toEndOf="@+id/name"
+            android:src="@drawable/nan_logo"
+
+            android:layout_marginLeft="5dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/tupian"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:background="#ffffffff" />
+    </LinearLayout>
+</LinearLayout>

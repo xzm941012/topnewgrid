@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/actionbar"
+        android:background="@color/activitybarblue">
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/segmented2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/button21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最热"
+                android:checked="true"
+                style="@style/RadioButton" />
+
+
+            <RadioButton
+                android:id="@+id/button23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附近"
+                style="@style/RadioButton" />
+        </info.hoang8f.android.segmented.SegmentedGroup>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:id="@+id/imageView16"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="发布"
+            android:id="@+id/textView70"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffffff"
+            android:visibility="gone" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:textColor="#ffffffff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:spinnerMode="dropdown"
+            android:background="@null"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView234"
+            android:src="@drawable/ic_magnify_dark"
+            android:layout_alignTop="@+id/segmented2"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="拜师"
+            android:id="@+id/textView72"
+            android:textColor="#ffffffff"
+            android:layout_centerInParent="true"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:headerDividersEnabled="false"
+        android:layout_below="@+id/relativeLayout">
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/actionbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <com.example.topnewgrid.obj.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            app:pstsShouldExpand="true"
+            app:pstsDividerColor="#ffffff"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsIndicatorColor="@color/activitybarblue"
+            app:selectedTabTextColor="@color/activitybarblue"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+
+            android:fillViewport="false"
+            android:background="#fffffffc" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView2"
+            android:layout_alignParentBottom="true"
+            android:background="#ffb0b0b0"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="0.1dp"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView20"
+        android:background="#ff939393"
+        android:layout_above="@+id/viewpager3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/actionbar"
+        android:visibility="gone" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp">
+        <!-- ... XML CODE -->
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/buttonFloat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            materialdesign:animate="false"
+            materialdesign:iconDrawable="@drawable/ic_action_edit" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:id="@+id/imageView57"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fenlei_1"
+                        android:scaleType="fitXY"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="                   IT"
+                        android:id="@+id/textView50"
+                        android:paddingTop="5dp"
+                        android:background="#aafffffa"
+                        android:paddingLeft="10dp"
+                        android:layout_alignBottom="@+id/imageView57"
+                        android:layout_alignRight="@+id/imageView57"
+                        android:layout_alignLeft="@+id/imageView57"
+                        android:layout_alignStart="@+id/imageView57" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:id="@+id/imageView58"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fenlei_3"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="                 美食"
+                        android:id="@+id/textView55"
+                        android:paddingTop="5dp"
+                        android:background="#aafffffa"
+                        android:paddingLeft="10dp"
+                        android:layout_alignBottom="@+id/imageView58"
+                        android:layout_alignRight="@+id/imageView58"
+                        android:textColor="#ff333333"
+                        android:layout_alignLeft="@+id/imageView58"
+                        android:layout_alignStart="@+id/imageView58" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:id="@+id/imageView59"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fenlei_4"
+                        android:scaleType="fitXY"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="                手工"
+                        android:id="@+id/textView56"
+                        android:paddingTop="5dp"
+                        android:background="#aafffffa"
+                        android:paddingLeft="10dp"
+                        android:layout_alignBottom="@+id/imageView59"
+                        android:layout_alignRight="@+id/imageView59"
+                        android:layout_alignEnd="@+id/imageView59"
+                        android:layout_alignLeft="@+id/imageView59"
+                        android:layout_alignStart="@+id/imageView59" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:id="@+id/imageView60"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fenlei_5"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="                 运动"
+                        android:id="@+id/textView57"
+                        android:paddingTop="5dp"
+                        android:background="#aafffffa"
+                        android:paddingLeft="10dp"
+                        android:layout_alignBottom="@+id/imageView60"
+                        android:layout_alignRight="@+id/imageView60"
+                        android:textColor="#ff333333"
+                        android:layout_alignLeft="@+id/imageView60"
+                        android:layout_alignStart="@+id/imageView60" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:id="@+id/imageView61"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fenlei_6"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="                艺术"
+                        android:id="@+id/textView58"
+                        android:paddingTop="5dp"
+                        android:background="#aafffffa"
+                        android:paddingLeft="10dp"
+                        android:layout_alignBottom="@+id/imageView61"
+                        android:layout_alignRight="@+id/imageView61"
+                        android:layout_alignEnd="@+id/imageView61"
+                        android:layout_alignLeft="@+id/imageView61"
+                        android:layout_alignStart="@+id/imageView61" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:id="@+id/imageView62"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fenlei_8"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="                 舞蹈"
+                        android:id="@+id/textView59"
+                        android:paddingTop="5dp"
+                        android:background="#aafffffa"
+                        android:paddingLeft="10dp"
+                        android:layout_alignBottom="@+id/imageView62"
+                        android:layout_alignRight="@+id/imageView62"
+                        android:textColor="#ff333333"
+                        android:layout_alignLeft="@+id/imageView62"
+                        android:layout_alignStart="@+id/imageView62" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:id="@+id/imageView63"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fenlei_9"
+                        android:scaleType="fitXY"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="                音乐"
+                        android:id="@+id/textView60"
+                        android:paddingTop="5dp"
+                        android:background="#aafffffa"
+                        android:paddingLeft="10dp"
+                        android:layout_alignBottom="@+id/imageView63"
+                        android:layout_alignRight="@+id/imageView63"
+                        android:layout_alignEnd="@+id/imageView63"
+                        android:layout_alignLeft="@+id/imageView63"
+                        android:layout_alignStart="@+id/imageView63" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:id="@+id/imageView64"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fenlei_10"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="                 生活"
+                        android:id="@+id/textView62"
+                        android:paddingTop="5dp"
+                        android:background="#aafffffa"
+                        android:paddingLeft="10dp"
+                        android:layout_alignBottom="@+id/imageView64"
+                        android:layout_alignRight="@+id/imageView64"
+                        android:textColor="#ff333333"
+                        android:layout_alignLeft="@+id/imageView64"
+                        android:layout_alignStart="@+id/imageView64" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:id="@+id/imageView65"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fenlei_13"
+                        android:scaleType="fitXY"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="                学习"
+                        android:id="@+id/textView63"
+                        android:paddingTop="5dp"
+                        android:background="#aafffffa"
+                        android:paddingLeft="10dp"
+                        android:layout_alignBottom="@+id/imageView65"
+                        android:layout_alignRight="@+id/imageView65"
+                        android:layout_alignEnd="@+id/imageView65"
+                        android:layout_alignLeft="@+id/imageView65"
+                        android:layout_alignStart="@+id/imageView65" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:id="@+id/imageView66"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fenlei_15"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="                 其他"
+                        android:id="@+id/textView65"
+                        android:paddingTop="5dp"
+                        android:background="#aafffffa"
+                        android:paddingLeft="10dp"
+                        android:layout_alignBottom="@+id/imageView66"
+                        android:layout_alignRight="@+id/imageView66"
+                        android:textColor="#ff333333"
+                        android:layout_alignLeft="@+id/imageView66"
+                        android:layout_alignStart="@+id/imageView66" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"></RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

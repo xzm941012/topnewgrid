@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bcg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top" >
+        </ImageView>
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_left"
+            android:gravity="right|center"
+            android:onClick="back"
+            android:text="返回    "
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/photo_album_chooseNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/finishBtn"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_right"
+            android:gravity="left|center"
+            android:onClick="finish"
+            android:text="    完成"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/photo_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:horizontalSpacing="8dip"
+        android:numColumns="3"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:paddingTop="8dip"
+        android:scrollbars="none"
+        android:verticalSpacing="8dip" />
+
+</LinearLayout>

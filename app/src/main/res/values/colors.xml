@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="window_bg">#ffeef1f3</color>
+    <color name="qqblue">#ff54acea</color>
+    <color name="radiobutton">#caf3f3f1</color>
+    <color name="darkgrays">#404040ff</color>
+    <color name="pinks">#f8bbd0</color>
+    <color name="lightblues">#b3e5fc</color>
+    <color name="purples">#e1bee7</color>
+    <color name="blues">#d0d9ff</color>
+    <color name="reds">#f9bdbb</color>
+    <color name="limes">#f0f4c3</color>
+    <color name="oranges">#ffe0b2</color>
+    <color name="deeppurples">#d1c4e9</color>
+    <color name="indigos">#c5cae9</color>
+    <color name="teals">#b2dfdb</color>
+    <color name="greens">#a3e9a4</color>
+    <color name="deeporanges">#ffccbc</color>
+    <color name="cyans">#b2ebf2</color>
+    <color name="browns">#d7ccc8</color>
+    <color name="brownss">#cfd8dc</color>
+
+    <color name="red">#FF0000</color>
+    <color name="green">#0ff0ff</color>
+    <color name="lightgray">#c0c0c0ff</color>
+
+    <color name="lightword">#ff727272</color>
+
+    <color name="yellow">#ffFF33ff</color>
+    <color name="blue">#ff0f81d9</color>
+    <color name="gray">#ff666666</color>
+    <color name="magenta">#ff6699ff</color>
+    <color name="cyan">#66ffffff</color>
+    <color name="transparent_black">#ff000000</color>
+    <color name="background_dark">#f0f0f0</color>
+    <color name="camera_bg">#2c2c2c</color>
+    <color name="camera_progress">#2980B9</color>
+    <color name="camera_progress_split">#005084</color>
+    <color name="camera_progress_three">#24ff00</color>
+    <color name="camera_progress_overflow">#1b5d89</color>
+    <color name="camera_theme_selected_bgcolor">#2980B9</color>
+    <!-- 视频选择 -->
+
+    <color name="headerbar_color"> #81D4FA</color>
+    <color name="tabs_color"> #81D4FA </color>
+    <color name="tabs_title_color"> #FFFFFF </color>
+    <color name="headerbar_title_color"> #FFFFFF </color>
+    <color name="headerbar_selected_tab_color"> #34b4e3 </color>
+
+    <color name="radiobg_press">#ffb5e393</color>
+    <color name="bottomradiobg_press">#ffc7c7c7</color>
+    <color name="radiobg_normal">#555555</color>
+    <color name="hole_blue">#ff48a8ca</color>
+    <color name="white">#ffffff</color>
+    <color name="tabtextcolor">#ff717171</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+
+    <color name="bt">#5677FC</color>
+
+    <color name="helpcolor">#ff44b59d</color>
+    <color name="theme_button_normal">#ffff8400</color>
+    <color name="theme_button_pressed">#ffffa646</color>
+    <color name="white_70_transparent">#b3ffffff</color>
+    <color name="activitybarblue">#19b699</color>
+    <color name="activitybarblue2">#ff029789</color>
+    <color name="activitybarblue3">#ffff8400</color>
+    <color name="activitybarwhite">#fff4f4f4</color>
+
+    <color name="activitycolor">#ffe87a83</color>
+
+    <item name="subscribe_item_text_color_normal_night" type="color">@color/default_text_night</item>
+
+    <color name="default_text_night">#ff747474</color>
+    <color name="subscribe_item_text_color_pressed_night">#ff303030</color>
+    <color name="subscribe_item_selected_stroke_night">#ffbc494d</color>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="huise">#ff808080</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_drag_bg2">#fffbfbfb</color>
+    <color name="subscribe_item_drag_bg3">#ffffffff</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+
+    <color name="default_text">#ff454545</color>
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="category_subscribe_text">#ffffffff</color>
+    <color name="drawer_item_bg">#ff5d5d5d</color>
+    <color name="drawer_line_color">#ff444444</color>
+    <color name="title_text_color">#ffffffff</color>
+    <color name="subscribe_tip_text">#ff2e2e2e</color>
+    <color name="subscribe_activity_bg">#ffefefef</color>
+    <color name="subscribe_bg">#fff5f5f5</color>
+    <color name="subscribe_seperate_line">#ffcdcdcd</color>
+    <color name="my_fab_color">#ffffffff</color>
+
+    <!--浮动按钮color-->
+    <color name="primary">#ffffffff</color>
+    <color name="primary_pressed">#ffb5e393</color>
+    <color name="ripple">#ffb5e393</color>
+
+</resources>

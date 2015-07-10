@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="18"
+                    android:id="@+id/textView158"
+                    android:textSize="27dp"
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="三月"
+                    android:id="@+id/textView159"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView158"
+                    android:layout_toEndOf="@+id/textView158"
+                    android:textSize="12dp"
+                    android:layout_marginTop="2dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015年"
+                    android:id="@+id/textView160"
+                    android:textSize="8dp"
+                    android:layout_below="@+id/textView159"
+                    android:layout_toRightOf="@+id/textView158"
+                    android:layout_toEndOf="@+id/textView158"
+                    android:textColor="#ff7d7d7d"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="今天"
+                android:id="@+id/textView151"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView157"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textIsSelectable="false"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView157"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/line1"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="63dp"
+                    android:id="@+id/lin11"
+                    android:layout_margin="1.5dp"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="63dp"
+                    android:id="@+id/lin12"
+                    android:layout_margin="1.5dp"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="63dp"
+                    android:id="@+id/lin13"
+                    android:layout_margin="1.5dp"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/line1"
+                android:id="@+id/line2">
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="63dp"
+                    android:id="@+id/lin21"
+                    android:layout_margin="1.5dp"
+                    android:visibility="gone"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="63dp"
+                    android:id="@+id/lin22"
+                    android:layout_margin="1.5dp"
+                    android:visibility="gone"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="63dp"
+                    android:id="@+id/lin23"
+                    android:layout_margin="1.5dp"
+                    android:visibility="gone"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/line2"
+                android:id="@+id/line3" >
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="63dp"
+                    android:id="@+id/lin31"
+                    android:layout_margin="1.5dp"
+                    android:visibility="gone"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="63dp"
+                    android:id="@+id/lin32"
+                    android:layout_margin="1.5dp"
+                    android:visibility="gone"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="63dp"
+                    android:id="@+id/lin33"
+                    android:layout_margin="1.5dp"
+                    android:visibility="gone"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageView162"
+                android:layout_below="@+id/textView157"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView237"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/imageView162"
+                android:src="@drawable/record_play"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="43dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

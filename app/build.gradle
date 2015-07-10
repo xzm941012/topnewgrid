@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "com.example.topnewgrid"
+        minSdkVersion 11
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    repositories {
+        jcenter()
+        //maven { url "https://jitpack.io" }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.2'
+    compile files('libs/aspectjrt.jar')
+    compile files('libs/commons-httpclient-3.1.jar')
+    //????????
+    //compile 'uk.co.chrisjenx:calligraphy:2.0.1'
+    compile files('libs/locSDK_5.01.jar')
+    compile project(':library')
+    compile files('libs/jpush-sdk-release1.7.3.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'de.hdodenhof:circleimageview:1.2.1'
+    compile 'com.shamanland:fab:0.0.7'
+    compile 'info.hoang8f:android-segmented:1.0.4'
+    //compile 'com.melnykov:floatingactionbutton:1.1.0'
+    compile 'com.yalantis:contextmenu:1.0.1'
+    //compile 'com.android.support:support-v4:21.0.3'
+    //compile 'com.android.support:appcompat-v7:22.0.0'
+    compile files('libs/mframework.jar')
+    compile files('libs/ShareSDK-QQ-2.5.8.jar')
+    //material design ????
+    compile 'com.rengwuxian.materialedittext:library:1.8.3'
+    //Material Design Android Library
+    compile 'com.github.navasmdc:MaterialDesign:1.+@aar'
+    //FadingActionBar
+    compile 'com.github.manuelpeinado.fadingactionbar:fadingactionbar:3.1.2'
+    //compile 'com.github.dexafree:materiallist:2.3.2'
+    //compile files('libs/android-support-v4.jar')
+    //compile files('libs/Baidu_CyberPlayer_SDK_1.4.jar')
+    //rtsp视屏流
+    //compile project(':libstreaming')
+    compile files('libs/aspectjrt.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile files('libs/vcameralibrary.jar')
+    //compile project(':pLASample')
+    //带圆角的imageview
+    compile 'com.joooonho:selectableroundedimageview:1.0.1'
+}

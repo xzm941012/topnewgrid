@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.topnewgrid"
+    >
+
+
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!--jpush permission-->
+    <permission android:name="com.example.topnewgrid.permission.JPUSH_MESSAGE" android:protectionLevel="signature" />
+
+    <!-- Required -->
+    <uses-permission android:name="com.example.topnewgrid.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!--end-->
+    <!--ShareSDK-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.android.permission.WRITE_APN_SETTINGS"/>
+    <!--end-->
+    <!--baidu api-->
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></permission>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE">
+    </uses-permission>
+
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+
+    <!--end-->
+
+
+
+    <!-- 访问网络权限 -->
+
+    <!-- if you want to load images from a file OR from the internet -->
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+
+
+
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".app.AppApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="bUlM7efKFonFmZtgkdIoijQy" />
+        <activity
+            android:name="com.example.topnewgrid.Activity_home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--定位activity-->
+        <activity
+            android:name="demo.ReadLocation"
+            android:label="活动地点" >
+        </activity>
+        <activity
+            android:name="demo.LocationMain"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="请选择活动地点" >
+
+        </activity>
+        <activity android:name=".MainActivity"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_fabu_receiver"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_fabu_huodong_step3"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_yaoyiyao"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_ReadPerson"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_foucused"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_edit"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_fenlei"
+            android:label="">
+        </activity>
+
+        <activity android:name=".Activity_gallary"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_fujin"
+            android:label="">
+        </activity>
+        <activity android:name="shake.ShakeActivity"
+            android:label="">
+        </activity>
+
+        <activity android:name=".Activity_joinUser"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_choose_huodong"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_video"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_receiver_pinglun"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_yaoqing"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_huodong_xiangqing"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_regist"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_findUser"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_list_baoming"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_bieren"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_xiugai_jianjie"
+            android:label="">
+        </activity>
+        <activity android:name=".ChannelActivity"
+            android:label="">
+        </activity>
+
+        <activity android:name=".Activity_wanshang_ziliao"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_login"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_guanli"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_find"
+            android:label="">
+        </activity>
+
+        <activity android:name=".Activity_pinglun"
+            android:label="">
+        </activity>
+        <activity android:name=".Activity_receiver"
+            android:label="">
+        </activity>
+        <activity
+            android:name="org.apache.android.media.VideoViewDemo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="org.apache.android.media.BBVideoPlayer"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <!--短视频录制SDK-->
+        <activity
+            android:name="demo.ui.record.MediaRecorderActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/CameraTheme" >
+        </activity>
+        <activity
+            android:name="demo.ui.record.MediaPreviewActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/CameraTheme" >
+        </activity>
+        <activity
+            android:name="demo.ui.record.ImportVideoActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/CameraTheme" >
+        </activity>
+        <!--end-->
+        <!--baidu map api-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <!-- meta-data需要写在application中 -->
+
+        <!--end-->
+        <!--选择图片上传activity-->
+
+        <activity
+            android:name=".choosephotos.choosephotos.photoviewer.photoviewerinterface.ImageViewerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <activity
+            android:name=".choosephotos.choosephotos.photoviewer.photoviewerinterface.ViewPagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".choosephotos.choosephotos.photoviewer.photoviewerinterface.ViewPagerDeleteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".choosephotos.choosephotos.photoviewer.photoviewerinterface.ViewPagerBitmapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".choosephotos.choosephotos.photo.PhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".choosephotos.choosephotos.photo.PhotoAlbumActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!--结束上传antivity-->
+        <!--选择视频-->
+        <activity
+            android:name="mediachooser.activity.HomeFragmentActivity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="mediachooser.activity.BucketHomeFragmentActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!--end-->
+        <!--ShareSDK-->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.smssdk.SMSSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!--end-->
+        <!--自定义融云activity-->
+        <!--end自定义-->
+
+        <!-- Begin Rong Cloud -->
+
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="bmdehs6pdvjcs"/>
+
+        <service android:name="io.rong.imlib.RongService" />
+
+
+
+        <activity
+            android:name="io.rong.imkit.RongActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.example.topnewgrid"
+                    android:pathPrefix="/conversationsetting/"
+                    android:scheme="rong" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.example.topnewgrid"
+                    android:path="/grouplist"
+                    android:scheme="rong" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.example.topnewgrid"
+                    android:path="/conversationgrouplist"
+                    android:scheme="rong" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.example.topnewgrid"
+                    android:pathPrefix="/friend/"
+                    android:scheme="rong" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="io.rong.imkit.RongSingleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.example.topnewgrid"
+                    android:path="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="io.rong.imkit.RongSecActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.example.topnewgrid"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="io.rong.voipkit.activity.CallSideActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="io.rong.voipkit.activity.CalledSideActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="io.rong.voipkit.calledSideActivity.action" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:host="com.example.topnewgrid"
+                    android:path="/calledsideactivity"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!--qq login-->
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent222222" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <!--end-->
+        <service
+            android:name="io.rong.imkit.service.RongIMService"
+            android:enabled="true"
+            android:exported="false"
+            android:priority="1000"></service>
+
+        <service
+            android:name="io.rong.imlib.push.PushService"
+            android:process=":push">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="io.rong.push" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="io.rong.imlib.push.CommandService"
+            android:process=":push">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="io.rong.command" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.rong.imlib.push.PushReceiver"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="io.rong.imlib.push.PushMessageReceiver">
+            <intent-filter>
+                <action android:name="io.rong.push.message" />
+            </intent-filter>
+        </receiver>
+        <!-- End Rong Cloud -->
+
+        <!--jpush Begin-->
+        <!-- Required -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000"> <!--since 1.3.5 -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!--since 1.3.5 -->
+                <category android:name="com.example.topnewgrid" /> <!--since 1.3.5 -->
+            </intent-filter> <!--since 1.3.5 -->
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.topnewgrid" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!--自己定义的消息receiver-->
+        <receiver
+            android:name="com.example.topnewgrid.receiver.MyReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <category android:name="com.example.topnewgrid" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。-->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。-->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data android:name="JPUSH_APPKEY" android:value="321aef93235be18a6535c140"/>
+        <!--jpush End-->
+
+
+    </application>
+
+
+
+</manifest>

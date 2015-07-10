@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/actionbar"
+        android:background="@color/activitybarblue">
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/segmented2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/button21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我发布的"
+                style="@style/RadioButton"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/button22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我参与的"
+                style="@style/RadioButton"
+                android:checked="false" />
+            <RadioButton
+                android:id="@+id/button23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我收藏的"
+                style="@style/RadioButton"
+                android:checked="false" />
+        </info.hoang8f.android.segmented.SegmentedGroup>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:id="@+id/imageView16"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ff808080" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView17"
+            android:src="@drawable/ic_chevron_left_dark"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细列表"
+            android:id="@+id/textView254"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffffff" />
+
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:id="@+id/listView41"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/actionbar" />
+</RelativeLayout>

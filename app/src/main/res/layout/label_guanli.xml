@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:id="@+id/imageView18"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="庐山一日游"
+        android:id="@+id/textView31"
+        android:layout_toRightOf="@+id/imageView18"
+        android:layout_toEndOf="@+id/imageView18"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="时间：2015-1-11至2015-1-13"
+        android:id="@+id/textView32"
+        android:layout_below="@+id/textView31"
+        android:layout_alignLeft="@+id/textView31"
+        android:layout_alignStart="@+id/textView31"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="地点：庐山"
+        android:id="@+id/textView33"
+        android:layout_below="@+id/textView32"
+        android:layout_alignLeft="@+id/textView32"
+        android:layout_alignStart="@+id/textView32"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="人数：15/30"
+        android:id="@+id/textView34"
+        android:layout_below="@+id/textView33"
+        android:layout_alignLeft="@+id/textView33"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="状况：进行中"
+        android:id="@+id/textView35"
+        android:layout_below="@+id/textView34"
+        android:layout_alignLeft="@+id/textView34"
+        android:layout_alignStart="@+id/textView34"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.33"
+        android:paddingTop="7dp"
+        android:paddingRight="10dp"
+        android:id="@+id/linearLayout4"
+        android:layout_alignBottom="@+id/imageView18"
+        android:layout_toRightOf="@+id/textView35"
+        android:layout_toEndOf="@+id/textView35"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView46"
+            android:layout_weight="1"
+            android:src="@drawable/ic_heart_outline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="10"
+            android:id="@+id/textView36"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView47"
+            android:layout_weight="1"
+            android:src="@drawable/ic_message_processing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="123"
+            android:id="@+id/textView37"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView48"
+            android:layout_weight="1"
+            android:src="@drawable/ic_share_variant" />
+
+    </LinearLayout>
+
+</RelativeLayout>

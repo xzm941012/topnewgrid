@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:id="@+id/listView41"
+        android:layout_centerHorizontal="true"
+        android:background="#ffefefef" />
+    <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+        android:id="@+id/progressBarCircularIndetermininate"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="#1E88E5"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>
